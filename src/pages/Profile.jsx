@@ -5,6 +5,9 @@ import {updateDoc, doc} from 'firebase/firestore'
 import {db} from '../firebase.config'
 import {toast} from 'react-toastify'
 //import { onChange } from 'react-toastify/dist/core/store'
+import arrowRight from '../assets/svg/keyboardArrowRightIcon.svg'
+import homeIcon from '../assets/svg/homeIcon.svg'
+
 
 
 function Profile(){
@@ -81,6 +84,11 @@ function Profile(){
 
                 </form>
             </div>
+            <Link to='/create-listing' className='createListing'>
+                <img src={homeIcon} alt="home" />
+                <p>Sell or rent your home</p>
+                <img src={arrowRight} alt="arrow right" />
+            </Link>
         </main>
 
     </div>
