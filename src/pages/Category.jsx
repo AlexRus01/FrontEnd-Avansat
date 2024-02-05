@@ -119,6 +119,7 @@ function Category() {
                   id={listing.id}
                   key={listing.id}
                 />
+                
               ))}
             </ul>
           </main>
