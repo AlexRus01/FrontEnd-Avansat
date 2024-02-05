@@ -144,7 +144,7 @@ function CreateListing(){
         if(!e.target.files){
             setFormData((prevState) => ({
                 ...prevState,
-                [e.target.id]: boolean ?? e.target.value
+                [e.target.id]: boolean ?? e.target.value,
             }))
         }
     }
@@ -235,7 +235,7 @@ function CreateListing(){
 
         <label className="formLabel">Images</label>
         <p className="imagesInfo">The first image will be the cover</p>
-        <input className="formInputFile" type="file" id="images" onChange={onMutate} max='6' accept='.jpg,.png,.jpeg' multiple required />
+        <input className="formInputFile" type="file" id="images" onChange={onMutate} max='6' accept='.jpg,.png,.jpeg' multiple />
         <button type="submit" className="primaryButton createListingButton">Create Listing</button>
         </form>
         

@@ -6,7 +6,7 @@ import bathIcon from '../assets/svg/bathtubIcon.svg'
 
 export default function ListingItem({listing, id}) {
   return (
-    <li className='categoryListing'>
+    <li className='categoryListing' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Link to={`/category/${listing.type}/${id}`} className='categoryListingLink'>
        
         <img
@@ -21,13 +21,10 @@ export default function ListingItem({listing, id}) {
             </p>
             <p className='categoryListingName'>{listing.name}</p>
                 
-            <p className="categoryListingPrice">
+            <p className="categoryListingPrice" style={{ textAlign: 'center' }}>
             ${listing.offer ? listing.discountedPrice : listing.regularPrice}
                 {listing.type === 'rent' && ' / Month'}
                 
-            </p>
-            <p>
-              {id}
             </p>
         </div>
         </Link>
