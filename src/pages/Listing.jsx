@@ -38,6 +38,21 @@ function Listing() {
         <p>{listing.regularPrice} - $</p>
         <p className="listingLocation">{listing.location}</p>
         <p className="listingType">For {listing.type}</p>
+      
+        <ul className="listingDetailsList">
+            <li>
+                {listing.bedrooms > 1 ? `${listing.bedrooms} Bedrooms` : 'One Bedroom'}
+            </li>
+
+            <li>
+                {listing.bathrooms >1 ? `${listing.bathrooms} Bathrooms` : 'One Bathroom'}
+            </li>
+
+            <li>{listing.parking && "Parking spot"}</li>
+            <li>{listing.parking && "Furnished"}</li>
+        </ul>
+      <h1>Interesed?</h1>
+      <h2>Call our agency for more details: +40 (725 123 521)</h2>
       </div>
     ) : (
       <p>Loading...</p>
