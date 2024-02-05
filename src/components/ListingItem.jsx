@@ -26,7 +26,9 @@ export default function ListingItem({listing, id}) {
                 {listing.type === 'rent' && ' / Month'}
                 
             </p>
-
+            <p>
+              {id}
+            </p>
         </div>
         </Link>
         
