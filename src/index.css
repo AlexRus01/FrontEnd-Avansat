@@ -799,30 +799,10 @@ button {
 .formInputFile {
   width: 100%;
 }
-.formInputFile::-webkit-file-upload-button {
-  background-color: #00cc66;
-  border: none;
-  color: #ffffff;
-  font-weight: 600;
-  padding: 0.5rem 0.75rem;
-  border-radius: 1rem;
-  margin-right: 1rem;
-}
+
 
 .createListingButton {
   margin-top: 5rem;
 }
 
-.offers {
-  margin-bottom: 10rem;
-}
 
-.offerBadge {
-  padding: 0.25rem 0.5rem;
-  background-color: #000000;
-  color: #ffffff;
-  border-radius: 1rem;
-  margin-left: 1rem;
-  font-size: 0.8rem;
-  opacity: 0.75;
-}
